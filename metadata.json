@@ -1,0 +1,6 @@
+{
+  "name": "SmartIntern - AI Career & Internship Platform",
+  "description": "Full-stack AI platform for internship matching, predictive skill gap roadmaps, scam detection, technical mock interviews, and gamified skill quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
