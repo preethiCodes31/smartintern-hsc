@@ -26,18 +26,21 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
+
+      - name: Update npm
+        run: npm install -g npm@11.19.1
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      - name: Build project
+      - name: Build SmartIntern
         run: npm run build
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload build files
+      - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
